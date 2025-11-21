@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TexPacks - En İyi Texture Pack'ler</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+    
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 4.5rem;
+      background: linear-gradient(90deg, #ff6b6b, #9c27b0, #2196f3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .packs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .pack {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.4s;
+      backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(255,255,255,0.1);
+    }
+    .pack:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+    .pack img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .pack-name {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .version {
+      color: #aaa;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .download {
+      display: inline-block;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #9c27b0, #e91e63);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .download:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(156,39,176,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 3rem;
+      margin-top: 5rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TexPacks</h1>
+    <p>En güzel texture pack'ler burada!</p>
+  </header>
+
+  <div class="container">
+    <div class="packs">
+
+      <!-- BURAYA SENİN PACK'LERİN GELECEK (AŞAĞIDAKİ GİBİ EKLE) -->
+
+<div class="pack">
+  <img src="packs/MyPack.png" alt="White Crystal">
+  <div class="info">
+    <div class="pack name">Crystal Pvp Packs (White)</div>
+    <div class="version">1.20 - 1.21</div>
+    <a href="packs/White Crystal.zip" class="download" download>İndir/Yükle</a>
+  </div>
+</div>
+      <div class="pack">
+        <img src="packs/Sphax.png" alt="Soon/Yakında">
+        <div class="info">
+          <div class="pack name">Yakında/Soon</div>
+          <div class="version">soon</div>
+          <a href="packs/soon" class="download" download>İndir</a>
+        </div>
+      </div>
+
+      <!-- İstersen 10 tane daha aynı yapıda ekle -->
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 TexPacks - Tüm hakları saklıdır ❤
+  </footer>
+
+</body>
+</html>
